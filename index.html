@@ -12,7 +12,7 @@
                   flex-direction: row;
                   flex-wrap: wrap;
                   max-width: 490px;
-                  max-height: 1000px;
+                  height: 750px;
                   margin: auto;
                   justify-content: space-around;
                   align-content: space-around;
@@ -26,6 +26,9 @@
                   height: 100px;
                   width: 100px;
                   border-color: rgb(75, 75, 75);
+                  font-size: 30px;
+                  font-weight:900;
+
               }
 
               .botaogray {
@@ -35,6 +38,8 @@
                   background-color: rgb(151, 151, 151);
                   border-radius: 100%;
                   border-color: rgb(151, 151, 151);
+                  font-size: 30px;
+                  font-weight:900;
               }
 
               .botaorange {
@@ -44,22 +49,34 @@
                   height: 100px;
                   width: 100px;
                   border-color: rgb(255, 115, 0);
+                  font-size: 30px;
+                  font-weight:900;
               }
               
               .espacamento {
-                  flex-grow: 1;
-                  border-radius: 5%;
+                  flex-grow: 0;
+                  border-radius: 50px;
+                  color: white;
+                  background-color: rgb(255, 115, 0);
                   height: 100px;
-                  width: 50px;
-                  /* border-bottom-left-radius: 50%; */
+                  width: 220px;
+                  border-color: rgb(255, 115, 0);
+                  font-size: 30px;
+                  font-weight:900;
+                  
               }
 
               .result {
-                  flex-grow: 4;
                   background-color: rgba(216, 216, 216, 0.904);
-                  margin: 0px; 
+                  margin: 20px; 
                   width: 480px; 
-                  height: 121px;
+                  height: 120px;
+                  font-size: 75px;
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: flex-end;
+                  font-weight:900;
+
               }
 
               
@@ -70,7 +87,7 @@
     <body>
         <div class="container">
             <div class="result">
-                <textarea id="result" rows="10" name="result" class="result"></textarea>
+                &nbsp;
             </div>
             <button class="botaogray" value="AC">AC</button>
             <button class="botaogray" value="+/-">+/-</button>
@@ -80,7 +97,7 @@
             <button class="botaonum" value="7">7</button>
             <button class="botaonum" value="8">8</button>
             <button class="botaonum" value="9">9</button>
-            <button class="botaorange" value="X">X</button>
+            <button class="botaorange" value="X">x</button>
 
             <button class="botaonum" value="4">4</button>
             <button class="botaonum" value="5">5</button>
@@ -94,7 +111,7 @@
             
             <button class="botaonum" value="0">0</button>
             <button class="botaonum" value=",">,</button>
-            <button class="botaorange espacamento" value="=">=</button>
+            <button class="espacamento" value="=">=</button>
         
 
             
